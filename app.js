@@ -15,13 +15,6 @@ const PORT = 3500; // ou tout autre port
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Connexion à la base de données MongoDB
-/*mongoose.connect('mongodb+srv://fabio:fabio@cluster0.kwwr5uz.mongodb.net/?retryWrites=true&w=majority', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});*/
-
-
 // Créer un modèle de schéma pour l'utilisateur
 const userSchema = new mongoose.Schema({
     username: { type: String, required: true },
